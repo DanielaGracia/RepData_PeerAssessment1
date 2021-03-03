@@ -10,6 +10,7 @@ In this step the data is loaded and modified to be more suitable for analysis.
   
 ```{r loadingdata, echo=TRUE}
 # first we load the data
+unzip("activity.zip")
 mydata <- read.csv("activity.csv", header = TRUE, sep = ",")
 
 # second we convert the dates to date format
